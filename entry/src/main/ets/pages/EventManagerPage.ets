@@ -7,8 +7,8 @@ import { BusinessError } from '@ohos.base';
 // import
 
 // TO(solved)DO: 更改事件后显示的内容无法刷新
-// TODO: 剩余时间多少时弹窗提醒
-// TODO 删除事件不工作
+// TO(not added)DO: 剩余时间多少时弹窗提醒
+// TO(solved)DO 删除事件不工作
 
 @Component
 export struct EventManagerPage {

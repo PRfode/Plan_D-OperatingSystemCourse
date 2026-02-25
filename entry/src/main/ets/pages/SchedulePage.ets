@@ -222,7 +222,7 @@ export struct SchedulePage {
       this.routineIndices = { prev, curr, next };
       console.log(`AAAAAAA change routine thumbnail: ${prev} ${curr} ${next}`)
     }
-  } // TODO 更新idx后页面不能正常刷新
+  } // TO(solved)DO 更新idx后页面不能正常刷新
 
   private registerEmitter() {
     let e: emitter.InnerEvent = {
@@ -342,7 +342,7 @@ export struct SchedulePage {
         try {
           this.getUIContext().getPromptAction().showToast({ message: '已更新总时长', duration: 2000 });
         } catch (error) {
-          // TODO: Implement error handling.
+          // Implement error handling.
         }
       }
     }, ctx);
@@ -354,7 +354,7 @@ export struct SchedulePage {
       try {
         this.getUIContext().getPromptAction().showToast({ message: '请先选择事件', duration: 2000 });
       } catch (error) {
-        // TODO: Implement error handling.
+        // Implement error handling.
       }
       return;
     }
@@ -379,7 +379,7 @@ export struct SchedulePage {
     try {
       this.getUIContext().getPromptAction().showToast({ message: '倒计时已开始', duration: 2000 });
     } catch (error) {
-      // TODO: Implement error handling.
+      // Implement error handling.
     }
   }
 
