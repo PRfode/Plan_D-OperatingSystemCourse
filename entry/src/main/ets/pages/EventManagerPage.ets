@@ -4,7 +4,7 @@ import { FabButton } from '../components/FabButton'
 import emitter from '@ohos.events.emitter';
 import promptAction from '@ohos.promptAction';
 import { BusinessError } from '@ohos.base';
-import 
+// import
 
 // TO(solved)DO: 更改事件后显示的内容无法刷新
 // TODO: 剩余时间多少时弹窗提醒
@@ -109,7 +109,8 @@ export struct EventManagerPage {
 
     /* ===== 日期部分 ===== */
     let dateStr: string;
-    if (diffDays === 0 || ) dateStr = '今天';
+    // if (diffDays === 0 || ) dateStr = '今天';
+    if (diffDays === 0) dateStr = '今天';
     else if (diffDays === -1) dateStr = '昨天';
     else if (diffDays === -2) dateStr = '前天';
     else if (diffDays === 1) dateStr = '明天';
